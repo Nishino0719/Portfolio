@@ -37,3 +37,32 @@ npm install --save-dev typescript @types/react @types/node
 # jsファイルをtsxに変更
 find src -name "*.js" | sed 'p;s/.js$/.tsx/' | xargs -n2 mv
 ```
+
+- Tailwind css 対応
+
+```bash
+# 必要パッケージのインストール
+npm install tailwindcss@latest postcss@latest autoprefixer@latest
+# tailwind cssの設定ファイルたちをinit
+npx tailwindcss init -p
+```
+
+設定ファイルの記述(purge is 大事)
+
+```bash
+# tailwind.config.js
+module.exports = {
+  purge: ["./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "media", // 'media' or 'class'
+  theme: { extend: { colors: { "accent-1": "#333" } } },
+  variants: { extend: {} },
+  plugins: [],
+};
+```
+
+```bash
+# postcss.config.js
+module.exports = {
+  plugins: ["tailwindcss", "autoprefixer"],
+};
+```
