@@ -1,34 +1,39 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Next.js + Typescript + Tailwind css + Material UI
 
-First, run the development server:
+- Next.js の設定
 
 ```bash
-npm run dev
-# or
-yarn dev
+# Next.jsのプロジェクトを作成
+npx create-next-app your-project-name
+
+# srcディレクトリを作成 + pagesなどのディレクトリへ
+mkdir src; mv components lib pages styles src
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Prettier の設定
+  .prettierrc にて以下の記述を追加
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+# .prettierrc
+{
+  "trailingComma": "none",
+  "tabWidth": 2,
+  "semi": false,
+  "singleQuote": true
+}
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Typescript 対応
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+# ts用の設定ファイルを作成
+touch tsconfig.json
+# npm run devをしてエラーが出たときのメッセージを走らせる
+npm install --save-dev typescript @types/react @types/node
+# jsファイルをtsxに変更
+find src -name "*.js" | sed 'p;s/.js$/.tsx/' | xargs -n2 mv
+```
