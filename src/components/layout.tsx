@@ -4,7 +4,7 @@ import { Header } from '../components/header'
 export const Layout = (props: { children: ReactNode }) => {
   return (
     <>
-      <Header />
+      <Header transparent />
       <main style={{ backgroundColor: '#fafafa' }}>{props.children}</main>
     </>
   )
