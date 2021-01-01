@@ -1,15 +1,16 @@
-import Link from 'next/link'
 import { Layout } from '../components/layout'
+import Image from 'next/image'
 
-const Home = () => {
+const Works = () => {
   return (
     <Layout>
       <main className="profile-page">
-        <section className="relative block" style={{ height: '300px' }}>
+        <section className="relative block" style={{ height: '500px' }}>
           <div
             className="absolute top-0 w-full h-full bg-center bg-cover"
             style={{
-              backgroundImage: `url('./green.jpg')`
+              backgroundImage:
+                "url('https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2710&q=80')"
             }}
           >
             <span
@@ -18,9 +19,9 @@ const Home = () => {
             ></span>
           </div>
         </section>
-        <section className="relative py-16 ">
+        <section className="relative py-16 bg-gray-300">
           <div className="container mx-auto px-4">
-            <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-3 shadow-xl rounded-lg -mt-40">
+            <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
               <div className="px-6">
                 <div className="flex flex-wrap justify-center">
                   <div className="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
@@ -48,28 +49,34 @@ const Home = () => {
                     <div className="justify-center py-4 lg:pt-4 pt-8"></div>
                   </div>
                 </div>
-                <div className="text-center mt-9 lg:mt-5">
+                <div className="text-center mt-10">
                   <h3 className="text-3xl font-semibold leading-normal text-gray-800 mb-2">
                     Nishino
                   </h3>
                   <div className="text-xs leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
                     Japan Fukuoka
                   </div>
-                  <div className="mb-2 text-gray-700 mt-5 font-semibold text-sm">
+                  <div className="mb-2 text-gray-700 mt-10 font-semibold text-sm">
                     Front Engineer | Mobile Engineer | Blockchain Engineer
                   </div>
                 </div>
-                <div className="mt-5 py-10 border-t border-gray-300 text-center">
+                <div className="mt-10 py-10 border-t border-gray-300 text-center">
                   <div className="flex flex-wrap justify-center">
                     <div className="w-full lg:w-9/12 px-4">
-                      <p className="mb-4 text-sm leading-relaxed text-gray-800">
-                        フロントエンドとブロックチェーンが好きな学生エンジニア。ものを作ることが好きです。
+                      <p className="mb-4 text-lg leading-relaxed text-gray-800">
+                        An artist of considerable range, Jenna the name taken by
+                        Melbourne-raised, Brooklyn-based Nick Murphy writes,
+                        performs and records all of his own music, giving it a
+                        warm, intimate feel with a solid groove structure. An
+                        artist of considerable range.
                       </p>
-                      <Link href="./about">
-                        <p className=" font-normal text-pink-500 cursor-pointer">
-                          もっと見る
-                        </p>
-                      </Link>
+                      <a
+                        href="#pablo"
+                        className="font-normal text-pink-500"
+                        onClick={(e) => e.preventDefault()}
+                      >
+                        Show more
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -83,4 +90,4 @@ const Home = () => {
 }
 
 // eslint-disable-next-line import/no-default-export
-export default Home
+export default Works

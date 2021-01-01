@@ -5,7 +5,7 @@ export const Layout = (props: { children: ReactNode }) => {
   return (
     <>
       <Header transparent />
-      <main style={{ backgroundColor: '#fafafa' }}>{props.children}</main>
+      <main style={{ backgroundColor: '#F3F4F6' }}>{props.children}</main>
     </>
   )
 }
