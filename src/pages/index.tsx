@@ -11,6 +11,9 @@ const Home = () => {
       >
         Button
       </button>
+      <h1>hello</h1>
+      <i className="fas fa-bell"></i>
+      <h1>he</h1>
     </Layout>
   )
 }

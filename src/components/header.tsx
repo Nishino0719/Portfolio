@@ -9,7 +9,7 @@ export const Header = () => {
   return (
     <header>
       <h1>Title</h1>
-      <nav>
+      <nav className="">
         {items.map(({ href, label }) => {
           return (
             <Link key={href} href={href}>
