@@ -15,7 +15,7 @@ const About = () => {
   return (
     <Layout>
       <main className="profile-page">
-        <section className="relative block" style={{ height: '300px' }}>
+        <section className="relative block" style={{ height: '230px' }}>
           <div
             className="absolute top-0 w-full h-full bg-center bg-cover"
             style={{
