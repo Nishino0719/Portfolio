@@ -63,7 +63,7 @@ const Home = () => {
                   <div className="flex flex-wrap justify-center">
                     <div className="w-full lg:w-9/12 px-4">
                       <p className="mb-4 text-sm leading-relaxed text-gray-800">
-                        フロントエンドとブロックチェーンが好きな学生エンジニア。ものを作ることが好きです。
+                        ものを作ることが好きな学生エンジニア
                       </p>
                       <Link href="./about">
                         <p className=" font-normal text-pink-500 cursor-pointer">
