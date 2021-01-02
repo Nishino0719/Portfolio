@@ -1,7 +1,30 @@
-import Link from 'next/link'
 import { Layout } from '../components/layout'
+import Image from 'next/image'
+import Link from 'next/link'
 
-const Home = () => {
+const languages = [
+  { src: '/ts.png', alt: 'Typescript' },
+  { src: '/js.png', alt: 'Javascript' },
+  { src: '/html.svg', alt: 'HTML' },
+  { src: '/css.svg', alt: 'CSS' },
+  { src: '/nodejs.svg', alt: 'Node.js' },
+  { src: '/c.svg', alt: 'C' },
+  { src: '/dart.svg', alt: 'Dart' },
+  { src: '/solidity.png', alt: 'Solidity' },
+  { src: '/java.svg', alt: 'Java' }
+]
+
+const frameworks = [
+  { src: '/nextjs.svg', alt: 'Next.js' },
+  { src: '/nuxtjs.svg', alt: 'Nuxt.js' },
+  { src: '/angular.svg', alt: 'Angular' },
+  { src: '/tailwindcss.svg', alt: 'Tailwind CSS' },
+  { src: '/express.svg', alt: 'Express' },
+  { src: '/elementui.svg', alt: 'Element UI' },
+  { src: '/flutter.svg', alt: 'Flutter' },
+  { src: '/truffle.svg', alt: 'truffle' }
+]
+const About = () => {
   return (
     <Layout>
       <main className="profile-page">
@@ -59,18 +82,79 @@ const Home = () => {
                     Front Engineer | Mobile Engineer | Blockchain Engineer
                   </div>
                 </div>
-                <div className="mt-5 py-10 border-t border-gray-300 text-center">
+                <div className="mt-5 pt-10 pb-5 border-t border-gray-300 text-center">
                   <div className="flex flex-wrap justify-center">
                     <div className="w-full lg:w-9/12 px-4">
-                      <p className="mb-4 text-sm leading-relaxed text-gray-800">
-                        ものを作ることが好きな学生エンジニア
+                      <p className="mb-4 text-xs lg:text-sm leading-relaxed text-gray-800">
+                        物を作ることが好きな学生エンジニア
+                        <br />
+                        普段はフロントエンド、ブロックチェーンを使ったアプリを作っています
                       </p>
-                      <Link href="./about">
-                        <p className=" font-normal text-pink-500 cursor-pointer">
-                          もっと見る
-                        </p>
-                      </Link>
                     </div>
+                  </div>
+                </div>
+                <div className="mt-5 py-10 border-t border-gray-300 text-left">
+                  <div className="flex flex-wrap lg:ml-40">
+                    <div className="w-full lg:w-9/12 px-4">
+                      <p className="text-2xl  font-semibold">Skills</p>
+                      <p className="text-lg text-gray-500">Languages</p>
+                      <div className="flex flex-wrap">
+                        {languages.map(({ src, alt }) => {
+                          return (
+                            <div className="m-2" key={src}>
+                              <div className="lg:block hidden">
+                                <Image
+                                  src={src}
+                                  alt={alt}
+                                  width="60"
+                                  height="60"
+                                ></Image>
+                              </div>
+                              <div className="lg:hidden block">
+                                <Image
+                                  src={src}
+                                  alt={alt}
+                                  width="35"
+                                  height="35"
+                                ></Image>
+                              </div>
+                            </div>
+                          )
+                        })}
+                      </div>
+                      <p className="text-lg text-gray-500">Frameworks</p>
+                      <div className="flex flex-wrap">
+                        {frameworks.map(({ src, alt }) => {
+                          return (
+                            <div className="m-2" key={src}>
+                              <div className="lg:block hidden">
+                                <Image
+                                  src={src}
+                                  alt={alt}
+                                  width="60"
+                                  height="60"
+                                ></Image>
+                              </div>
+                              <div className="lg:hidden block">
+                                <Image
+                                  src={src}
+                                  alt={alt}
+                                  width="35"
+                                  height="35"
+                                ></Image>
+                              </div>
+                            </div>
+                          )
+                        })}
+                      </div>
+                    </div>
+                  </div>
+                  <div className=" text-center border-t mt-5 pt-5">
+                    <Link href="./about">
+                      <p className=" font-normal text-pink-500 cursor-pointer">
+                        もっと見る
+                      </p>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -83,4 +167,4 @@ const Home = () => {
 }
 
 // eslint-disable-next-line import/no-default-export
-export default Home
+export default About
