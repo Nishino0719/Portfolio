@@ -4,8 +4,7 @@ import React from 'react'
 const items = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
-  { href: '/works', label: 'Works' },
-  { href: '/blogs', label: 'Blog' }
+  { href: '/works', label: 'Works' }
 ]
 
 export const Header = (props) => {
