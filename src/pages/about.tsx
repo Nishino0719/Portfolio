@@ -23,6 +23,16 @@ const frameworks = [
   { src: '/flutter.svg', alt: 'Flutter' },
   { src: '/truffle.svg', alt: 'truffle' }
 ]
+
+const others = [
+  { src: '/slack.svg', alt: 'Slack' },
+  { src: '/github.svg', alt: 'Github' },
+  { src: '/notion.svg', alt: 'Notion' },
+  { src: '/vscode.svg', alt: 'Visual Studio Code' },
+  { src: '/studio.png', alt: 'Android Studio' },
+  { src: '/firebase.svg', alt: 'Firebase' }
+]
+
 const About = () => {
   return (
     <Layout>
@@ -79,6 +89,99 @@ const About = () => {
                   </div>
                   <div className="mb-2 text-gray-700 mt-5 font-semibold text-sm">
                     Front Engineer | Mobile Engineer | Blockchain Engineer
+                  </div>
+                </div>
+                <div className="mt-5 pt-10 pb-5 border-t border-gray-300 text-center">
+                  <div className="flex flex-wrap justify-center">
+                    <div className="w-full lg:w-9/12 px-4">
+                      <p className="mb-4 text-xs lg:text-sm leading-relaxed text-gray-800">
+                        物を作ることが好きな学生エンジニア
+                        <br />
+                        普段はフロントエンド、ブロックチェーンを使ったアプリを作っています
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-5 py-10 border-t border-gray-300 text-left">
+                  <div className="flex flex-wrap lg:ml-40">
+                    <div className="w-full lg:w-9/12 px-4">
+                      <p className="text-2xl  font-semibold">Skills</p>
+                      <p className="text-lg text-gray-500">Languages</p>
+                      <div className="flex flex-wrap">
+                        {languages.map(({ src, alt }) => {
+                          return (
+                            <div className="m-3" key={src}>
+                              <div className="lg:block hidden">
+                                <Image
+                                  src={src}
+                                  alt={alt}
+                                  width="50"
+                                  height="50"
+                                ></Image>
+                              </div>
+                              <div className="lg:hidden block">
+                                <Image
+                                  src={src}
+                                  alt={alt}
+                                  width="35"
+                                  height="35"
+                                ></Image>
+                              </div>
+                            </div>
+                          )
+                        })}
+                      </div>
+                      <p className="text-lg text-gray-500">Frameworks</p>
+                      <div className="flex flex-wrap">
+                        {frameworks.map(({ src, alt }) => {
+                          return (
+                            <div className="m-3" key={src}>
+                              <div className="lg:block hidden">
+                                <Image
+                                  src={src}
+                                  alt={alt}
+                                  width="50"
+                                  height="50"
+                                ></Image>
+                              </div>
+                              <div className="lg:hidden block">
+                                <Image
+                                  src={src}
+                                  alt={alt}
+                                  width="35"
+                                  height="35"
+                                ></Image>
+                              </div>
+                            </div>
+                          )
+                        })}
+                      </div>
+                      <p className="text-lg text-gray-500">Others</p>
+                      <div className="flex flex-wrap">
+                        {others.map(({ src, alt }) => {
+                          return (
+                            <div className="m-3" key={src}>
+                              <div className="lg:block hidden">
+                                <Image
+                                  src={src}
+                                  alt={alt}
+                                  width="50"
+                                  height="50"
+                                ></Image>
+                              </div>
+                              <div className="lg:hidden block">
+                                <Image
+                                  src={src}
+                                  alt={alt}
+                                  width="35"
+                                  height="35"
+                                ></Image>
+                              </div>
+                            </div>
+                          )
+                        })}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
