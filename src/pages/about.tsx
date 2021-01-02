@@ -104,58 +104,73 @@ const About = () => {
                 </div>
                 {/* <!-- component --> */}
                 <div className="container  mx-auto w-full h-full border-t">
-                  <div className="relative wrap overflow-hidden ml-32 md:ml-0 p-5 md:p-10 h-full">
+                  <div className="w-full lg:w-9/12 p-4">
+                    <p className="text-2xl  font-semibold">Timeline</p>
+                  </div>
+                  <div className="relative wrap overflow-hidden p-5 md:p-10 h-full">
                     <div className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border md:left-1/2"></div>
                     {/* <!-- left timeline --> */}
                     <div className="mb-8 flex md:justify-between flex-row-reverse items-center w-full left-timeline">
-                      <div className="order-1 w-5/12"></div>
+                      <div className="order-1 md:w-5/12"></div>
                       <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full absolute md:static left-1">
                         <h1 className="mx-auto text-white font-semibold text-xs">
                           2019
                         </h1>
                       </div>
-                      <div className="order-1 bg-gray-100 rounded-lg shadow-xl w-96 md:w-5/12 px-6 py-4 ml-12 md:ml-0">
-                        <h3 className="mb-3 font-bold text-gray-800 text-lg">
+                      <div className="order-1 bg-gray-100 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4 ml-12 md:ml-0">
+                        <h3 className="mb-3 font-bold text-gray-800 md:text-lg text-base">
                           Hello World
                         </h3>
                         <p className="text-sm font-medium leading-snug tracking-wide text-gray-900 text-opacity-100">
-                          プログラミングに初めて触れる。使う側から作る側になりたいと思いWeb制作の技術を独学。
+                          大学に入学。アプリを使う側から作る側になりたい！と思いクラウドソーシングなどでWeb製作案件を受注。
                         </p>
                       </div>
                     </div>
 
                     {/* <!-- right timeline --> */}
                     <div className="mb-8 flex md:justify-between flex-row-reverse md:flex-row items-center w-full right-timeline">
-                      <div className="order-1 w-5/12"></div>
+                      <div className="order-1 md:w-5/12"></div>
                       <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full absolute md:static left-1">
                         <h1 className="mx-auto font-semibold text-xs text-white">
                           2020
                         </h1>
                       </div>
-                      <div className="order-1 bg-gray-100 rounded-lg shadow-xl w-96 md:w-5/12 px-6 py-4 ml-12 md:ml-0">
-                        <h3 className="mb-3 font-bold text-gray-800 text-lg">
-                          チーム開発楽しい
+                      <div className="order-1 bg-gray-100 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4 ml-12 md:ml-0">
+                        <h3 className="mb-3 font-bold text-gray-800 md:text-lg text-base">
+                          first commit
                         </h3>
                         <p className="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
                           自ら積極的にハッカソンやイベントに参加し、独学ではたどり着かなかったチーム開発を経験する。
+                          <a
+                            href="https://challecara.org/"
+                            className="text-blue-600"
+                            target="_brank"
+                          >
+                            チャレキャラ
+                          </a>
+                          で作ったアプリが企業賞受賞。
                         </p>
                       </div>
                     </div>
 
                     {/* <!-- left timeline --> */}
                     <div className="mb-8 flex md:justify-between flex-row-reverse items-center w-full left-timeline">
-                      <div className="order-1 w-5/12"></div>
+                      <div className="order-1 md:w-5/12"></div>
                       <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full absolute md:static left-1">
                         <h1 className="mx-auto text-white font-semibold text-xs">
                           2021
                         </h1>
                       </div>
-                      <div className="order-1 bg-gray-100 rounded-lg shadow-xl w-96 md:w-5/12 px-6 py-4 ml-12 md:ml-0">
-                        <h3 className="mb-3 font-bold text-gray-800 text-lg">
+                      <div className="order-1 bg-gray-100 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4 ml-12 md:ml-0">
+                        <h3 className="mb-3 font-bold text-gray-800 md:text-lg text-base">
                           Coming soon...
                         </h3>
                         <p className="text-sm font-medium leading-snug tracking-wide text-gray-900 text-opacity-100">
-                          実際にアプリをリリースして運営したい。ハードウェアも触りたい。興味あること全部する。
+                          実際にアプリをリリースして運営したい！
+                          <br />
+                          ハードウェアも触りたい！
+                          <br />
+                          興味あること全部する！
                         </p>
                       </div>
                     </div>
