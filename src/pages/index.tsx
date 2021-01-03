@@ -53,6 +53,7 @@ const About = () => {
                           href="https://github.com/Nishino0719"
                           className="cursor-pointer"
                           target="_brank"
+                          title="Github"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -70,6 +71,7 @@ const About = () => {
                           href="https://zenn.dev/nishino"
                           className="cursor-pointer"
                           target="_brank"
+                          title="Zenn"
                         >
                           <div className="fill-current text-gray-400 hover:text-green-500">
                             <svg
@@ -89,6 +91,7 @@ const About = () => {
                           href="mailto:nattokusaikusai@gmail.com"
                           className="cursor-pointer"
                           target="_brank"
+                          title="email"
                         >
                           <div className="fill-current text-gray-400 hover:text-green-500">
                             <svg

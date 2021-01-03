@@ -11,6 +11,7 @@ class MyDocument extends Document {
   render(): JSX.Element {
     return (
       <Html lang="ja">
+        <title>Nishino0719</title>
         <Head>
           <meta name="description" content="Hello, World!" />
           <link rel="icon" href="/favicon.ico" />
