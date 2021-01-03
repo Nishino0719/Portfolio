@@ -69,7 +69,7 @@ const About = () => {
                     <div className="py-2 lg:py-6 px-3 mt-14"></div>
                   </div>
                   <div className="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center"></div>
-                  <div className="w-full lg:w-4/12 px-4 lg:order-1 ">
+                  <div className="w-full lg:w-4/12 px-4 lg:order-1">
                     <div className="flex justify-center py-4">
                       <div className="mr-2 p-3">
                         <a
@@ -166,7 +166,7 @@ const About = () => {
                   <div className="w-full lg:w-9/12 p-4  lg:ml-40">
                     <p className="text-2xl  font-semibold">Timeline</p>
                   </div>
-                  <div className="relative wrap overflow-hidden p-5 md:p-10 h-full">
+                  <div className="relative wrap overflow-hidden p-5 md:p-10 h-full lg:ml-40 lg:mr-40">
                     <div className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border md:left-1/2"></div>
                     {/* <!-- left timeline --> */}
                     <div className="mb-8 flex md:justify-between flex-row-reverse items-center w-full left-timeline">
@@ -180,7 +180,7 @@ const About = () => {
                         <h3 className="mb-3 font-bold text-gray-800 md:text-lg text-base">
                           Hello World
                         </h3>
-                        <p className="text-sm font-medium leading-snug tracking-wide text-gray-900 text-opacity-100">
+                        <p className="text-sm font-nomal leading-snug tracking-wide text-gray-900 text-opacity-100">
                           大学に入学。アプリを使う側から作る側になりたい！と思いクラウドソーシングなどでWeb製作案件を受注。
                         </p>
                       </div>
@@ -198,7 +198,7 @@ const About = () => {
                         <h3 className="mb-3 font-bold text-gray-800 md:text-lg text-base">
                           first commit
                         </h3>
-                        <p className="text-sm font-medium leading-snug tracking-wide text-gray-900 text-opacity-100">
+                        <p className="text-sm font-nomal leading-snug tracking-wide text-gray-900 text-opacity-100">
                           自ら積極的にハッカソンやイベントに参加し、独学ではたどり着かなかったチーム開発を経験する。
                           <a
                             href="https://challecara.org/"
@@ -224,7 +224,7 @@ const About = () => {
                         <h3 className="mb-3 font-bold text-gray-800 md:text-lg text-base">
                           Coming soon...
                         </h3>
-                        <p className="text-sm font-medium leading-snug tracking-wide text-gray-900 text-opacity-100">
+                        <p className="text-sm font-nomal leading-snug tracking-wide text-gray-900 text-opacity-100">
                           実際にアプリをリリースして運営したい！
                           <br />
                           ハードウェアも触りたい！
