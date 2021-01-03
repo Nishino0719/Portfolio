@@ -39,7 +39,7 @@ const About = () => {
     <>
       <Meta
         title="Nishino0719 -About"
-        description="About Nishino | Front + Mobile + Blockchain Engineer"
+        description="Nishinoは何者なのか"
         image="https://avatars0.githubusercontent.com/u/55534054?s=460&u=402783902455ae84995129488dd3a12d0699fd84&v=4"
       />
       <Layout>
