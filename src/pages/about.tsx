@@ -40,7 +40,7 @@ const About = () => {
       <Meta
         title="Nishino0719 -About"
         description="About Nishino | Front + Mobile + Blockchain Engineer"
-        image="https://user-images.githubusercontent.com/55534054/103471565-2f285300-4dc5-11eb-992f-4b66126f1615.png"
+        image="https://user-images.githubusercontent.com/55534054/103472412-7d8f1f00-4dd0-11eb-8cbb-8403ceab54b2.png"
       />
       <Layout>
         <main className="profile-page">
@@ -157,7 +157,6 @@ const About = () => {
                       Front Engineer | Mobile Engineer | Blockchain Engineer
                     </div>
                   </div>
-
                   {/* <!-- component --> */}
                   <div className="container  mx-auto w-full h-full border-t">
                     <div className="w-full lg:w-9/12 p-4  lg:ml-40">

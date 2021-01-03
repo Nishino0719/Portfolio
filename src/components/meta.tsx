@@ -15,12 +15,12 @@ export const Meta: React.FC<Props> = (props) => {
       <title>{title}</title>
       <meta
         name="description"
-        content={description ? `${description}` : `Nishinoのポートフォリオ`}
+        content={description ? `${description}` : `Nishino0719`}
       />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
-      <meta name="twitter:card" content="photo" />
+      <meta name="twitter:card" content="summary_large_image" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content={type} />
