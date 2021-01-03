@@ -60,7 +60,7 @@ const Works = () => {
                   <p className="text-2xl lg:text-3xl  font-semibold">Web App</p>
                   <p className="text-sm text-gray-600">Webアプリ</p>
                   {/*  */}
-                  <div className="flex flex-wrap my-10">
+                  <div className=" flex flex-wrap my-10">
                     <div className="lg:w-3/4">
                       <p className="text-gray-500 font-semibold ml-3">
                         2020/12/31 ~ 2020/1/3
@@ -72,7 +72,7 @@ const Works = () => {
                       />
                     </div>
                     <div className="lg:w-1/4">
-                      <h3 className="text-lg font-bold lg:ml-10 text-green-600 my-4">
+                      <h3 className="text-xl font-bold lg:ml-10 text-green-600 my-4">
                         ポートフォリオ
                       </h3>
                       <div className="flex my-2">
@@ -82,7 +82,7 @@ const Works = () => {
                         <p className="text-base font-bold">4日</p>
                       </div>
 
-                      <p className="text-base my-2 lg:ml-10">
+                      <p className="text-sm my-2 lg:ml-10">
                         Next.jsの簡単なアウトプットをしてみたかった。
                       </p>
                       <div className="flex lg:ml-10 ">
@@ -135,8 +135,14 @@ const Works = () => {
                   </div>
                   {/*  */}
                   <div className="flex flex-wrap my-10 border-t py-10">
-                    <div className="lg:w-1/4">
-                      <h3 className="text-lg font-bold lg:mr-10 text-green-600 my-4">
+                    <div className="lg:w-3/4 lg:order-2">
+                      <p className="text-gray-500 font-semibold ml-3">
+                        2020/6/13 ~ 2020/7/13
+                      </p>
+                      <img src="./taskinit.png" alt="task init" className="" />
+                    </div>
+                    <div className="lg:w-1/4 lg:order-1">
+                      <h3 className="text-xl font-bold lg:mr-10 text-green-600 my-4">
                         Task init
                       </h3>
                       <div className="flex my-2">
@@ -144,7 +150,7 @@ const Works = () => {
                         <p className="text-base font-bold lg:mr-10">一ヶ月</p>
                       </div>
 
-                      <p className="text-base my-2 lg:mr-10">
+                      <p className="text-sm my-2 lg:mr-10">
                         Googleアカウントと連携し、今あるタスクを管理するアプリ。
                         <br />
                         学校のタスク管理アプリが使いづらすぎて作った。
@@ -168,10 +174,7 @@ const Works = () => {
                           </svg>
                         </a>
                       </div>
-                      <p
-                        className="font-bold text-base my-2 lg:mr-10"
-                        text-right
-                      >
+                      <p className="font-bold text-base my-2 lg:mr-10">
                         技術スタック
                       </p>
                       <div className="flex flex-wrap lg:mr-10">
@@ -199,12 +202,6 @@ const Works = () => {
                         })}
                       </div>
                     </div>
-                    <div className="lg:w-3/4">
-                      <p className="text-gray-500 font-semibold ml-3">
-                        2020/6/13 ~ 2020/7/13
-                      </p>
-                      <img src="./taskinit.png" alt="task init" className="" />
-                    </div>
                   </div>
                   {/*  */}
                 </div>
@@ -227,7 +224,7 @@ const Works = () => {
                       />
                     </div>
                     <div className="lg:w-1/2">
-                      <h3 className="text-lg font-bold lg:ml-10 text-green-600 my-4">
+                      <h3 className="text-xl font-bold lg:ml-10 text-green-600 my-4">
                         HUNTER HIDER
                       </h3>
                       <div className="flex my-2">
@@ -237,10 +234,10 @@ const Works = () => {
                         <p className="text-base font-bold">2日</p>
                       </div>
 
-                      <p className="text-base my-2 lg:ml-10">
-                        画像を認識して、宝の場所にカメラをかざすと宝(ARオブジェクト)が出現するARの宝探しアプリ
+                      <p className="text-sm my-2 lg:ml-10">
+                        画像を認識して、宝の場所にカメラをかざすと宝(ARオブジェクト)が出現するARの宝探しアプリ。
                         <br />
-                        初めてのハッカソン、初めてのFlutter、初めてのAR
+                        初めてのハッカソン、初めてのFlutter、初めてのAR。
                       </p>
                       <div className="flex lg:ml-10 ">
                         <p className="text-base font-bold">リポジトリ</p>
@@ -298,17 +295,27 @@ const Works = () => {
                   <p className="text-sm text-gray-600">
                     ブロックチェーンアプリ
                   </p>
-                  <div className="flex flex-wrap my-10 border-t py-10">
-                    <div className="lg:w-1/4">
-                      <h3 className="text-lg font-bold lg:mr-10 text-green-600 my-4">
-                        Task init
+                  <div className="flex flex-wrap my-10 py-10">
+                    <div className="lg:w-3/4 lg:order-2">
+                      <p className="text-gray-500 font-semibold ml-3">
+                        2020/8/7 ~ 2020/12/19
+                      </p>
+                      <img
+                        src="./reportoken.png"
+                        alt="task init"
+                        className="Reportoken"
+                      />
+                    </div>
+                    <div className="lg:w-1/4 lg:order-1">
+                      <h3 className="text-xl font-bold lg:mr-10 text-green-600 my-4">
+                        ReporToken
                       </h3>
                       <div className="flex my-2">
                         <p className="text-base font-bold">制作期間:</p>
                         <p className="text-base font-bold lg:mr-10">半年</p>
                       </div>
 
-                      <p className="text-base my-2 lg:mr-10">
+                      <p className="text-sm my-2 lg:mr-10">
                         ERC20トークンを用いた分散型レポート共有ブロックチェーンアプリ。
                         <br />
                         <a
@@ -339,10 +346,7 @@ const Works = () => {
                           </svg>
                         </a>
                       </div>
-                      <p
-                        className="font-bold text-base my-2 lg:mr-10"
-                        text-right
-                      >
+                      <p className="font-bold text-base my-2 lg:mr-10">
                         技術スタック
                       </p>
                       <div className="flex flex-wrap lg:mr-10">
@@ -369,16 +373,6 @@ const Works = () => {
                           )
                         })}
                       </div>
-                    </div>
-                    <div className="lg:w-3/4">
-                      <p className="text-gray-500 font-semibold ml-3">
-                        2020/8/7 ~ 2020/12/19
-                      </p>
-                      <img
-                        src="./reportoken.png"
-                        alt="task init"
-                        className="Reportoken"
-                      />
                     </div>
                   </div>
                 </div>
