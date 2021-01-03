@@ -16,9 +16,9 @@ const About = () => {
   return (
     <>
       <Meta
-        title="Portfolio"
+        title="Nishino0719"
         description="Nishino | Front + Mobile + Blockchain Engineer."
-        image="https://avatars0.githubusercontent.com/u/55534054?s=460&u=402783902455ae84995129488dd3a12d0699fd84&v=4"
+        image="https://user-images.githubusercontent.com/55534054/103471600-8e866300-4dc5-11eb-87c8-a8fe2012a1f2.png"
       />
       <Layout>
         <main className="profile-page">
