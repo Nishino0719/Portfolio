@@ -153,12 +153,12 @@ const About = () => {
                     <div className="text-xs leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
                       Japan Fukuoka
                     </div>
-                    <div className="mb-2 text-gray-700 mt-5 font-semibold text-sm">
+                    <div className="mb-5 text-gray-700 mt-5 font-semibold text-sm">
                       Front Engineer | Mobile Engineer | Blockchain Engineer
                     </div>
                   </div>
                   {/* <!-- component --> */}
-                  <div className="container  mx-auto w-full h-full border-t">
+                  <div className="container mx-auto w-full h-full border-t">
                     <div className="w-full lg:w-9/12 p-4  lg:ml-40">
                       <p className="text-2xl  font-semibold">Timeline</p>
                     </div>
