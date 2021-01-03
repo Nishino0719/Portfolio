@@ -18,7 +18,7 @@ const About = () => {
       <Meta
         title="Nishino0719"
         description="Nishino | Front + Mobile + Blockchain Engineer."
-        image="https://user-images.githubusercontent.com/55534054/103472375-15d8d400-4dd0-11eb-9e02-c778cb8f7416.png        "
+        image="https://user-images.githubusercontent.com/55534054/103472375-15d8d400-4dd0-11eb-9e02-c778cb8f7416.png"
       />
       <Layout>
         <main className="profile-page">

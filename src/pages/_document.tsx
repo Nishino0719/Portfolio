@@ -13,7 +13,7 @@ class MyDocument extends Document {
       <Html lang="ja">
         <title>Nishino0719</title>
         <Head>
-          <meta name="description" content="Hello, World!" />
+          <meta name="description" content="Front / Mobile Engineer" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
