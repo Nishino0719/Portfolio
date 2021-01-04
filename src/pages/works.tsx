@@ -74,10 +74,11 @@ const Works = () => {
                         <p className="text-gray-500 font-semibold ml-3">
                           2020/12/31 ~ 2020/1/3
                         </p>
-                        <img
-                          src="./portfolio.png"
+                        <Image
+                          src="/portfolio.png"
+                          width={2982}
+                          height={1844}
                           alt="ポートフォリオ"
-                          className=""
                         />
                       </div>
                       <div className="lg:w-1/4">
@@ -126,7 +127,7 @@ const Works = () => {
                                     alt={alt}
                                     width="50"
                                     height="50"
-                                  ></Image>
+                                  />
                                 </div>
                                 <div className="lg:hidden block">
                                   <Image
@@ -134,7 +135,7 @@ const Works = () => {
                                     alt={alt}
                                     width="35"
                                     height="35"
-                                  ></Image>
+                                  />
                                 </div>
                               </div>
                             )
@@ -148,10 +149,11 @@ const Works = () => {
                         <p className="text-gray-500 font-semibold ml-3">
                           2020/6/13 ~ 2020/7/13
                         </p>
-                        <img
-                          src="./taskinit.png"
-                          alt="task init"
-                          className=""
+                        <Image
+                          src="/taskinit.png"
+                          width={2980}
+                          height={1840}
+                          alt="Task init"
                         />
                       </div>
                       <div className="lg:w-1/4 lg:order-1">
@@ -200,7 +202,7 @@ const Works = () => {
                                     alt={alt}
                                     width="50"
                                     height="50"
-                                  ></Image>
+                                  />
                                 </div>
                                 <div className="lg:hidden block">
                                   <Image
@@ -208,7 +210,7 @@ const Works = () => {
                                     alt={alt}
                                     width="35"
                                     height="35"
-                                  ></Image>
+                                  />
                                 </div>
                               </div>
                             )
@@ -230,10 +232,11 @@ const Works = () => {
                         <p className="text-gray-500 font-semibold ml-3">
                           2020/9/24 ~ 2020/9/26
                         </p>
-                        <img
-                          src="./hunterhider.jpg"
-                          alt="hunter hider"
-                          className=""
+                        <Image
+                          src="/hunterhider.jpg"
+                          width={413}
+                          height={544}
+                          alt="HUNTER HIDER"
                         />
                       </div>
                       <div className="lg:w-1/2">
@@ -284,7 +287,7 @@ const Works = () => {
                                     alt={alt}
                                     width="50"
                                     height="50"
-                                  ></Image>
+                                  />
                                 </div>
                                 <div className="lg:hidden block">
                                   <Image
@@ -292,7 +295,7 @@ const Works = () => {
                                     alt={alt}
                                     width="35"
                                     height="35"
-                                  ></Image>
+                                  />
                                 </div>
                               </div>
                             )
@@ -313,10 +316,11 @@ const Works = () => {
                         <p className="text-gray-500 font-semibold ml-3">
                           2020/8/7 ~ 2020/12/19
                         </p>
-                        <img
-                          src="./reportoken.png"
-                          alt="task init"
-                          className="Reportoken"
+                        <Image
+                          src="/reportoken.png"
+                          width={2980}
+                          height={1842}
+                          alt="ReporToken"
                         />
                       </div>
                       <div className="lg:w-1/4 lg:order-1">
@@ -372,7 +376,7 @@ const Works = () => {
                                     alt={alt}
                                     width="50"
                                     height="50"
-                                  ></Image>
+                                  />
                                 </div>
                                 <div className="lg:hidden block">
                                   <Image
@@ -380,7 +384,7 @@ const Works = () => {
                                     alt={alt}
                                     width="35"
                                     height="35"
-                                  ></Image>
+                                  />
                                 </div>
                               </div>
                             )
