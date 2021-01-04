@@ -48,7 +48,7 @@ const About = () => {
             <div
               className="absolute top-0 w-full h-full bg-center bg-cover"
               style={{
-                backgroundImage: `url('./island.jpg')`
+                backgroundImage: `url('./island.webp')`
               }}
             >
               <span

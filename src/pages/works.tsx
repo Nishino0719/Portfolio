@@ -39,7 +39,7 @@ const Works = () => {
             <div
               className="absolute top-0 w-full h-full bg-center bg-cover"
               style={{
-                backgroundImage: `url('./ice.jpg')`
+                backgroundImage: `url('./ice.webp')`
               }}
             >
               <span
