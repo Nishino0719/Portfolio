@@ -1,6 +1,6 @@
 {
   "name": "nishino0719",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -15,6 +15,7 @@
     "postcss": "^8.2.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "ssri": "^8.0.1",
     "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
