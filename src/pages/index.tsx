@@ -45,7 +45,7 @@ const About = () => {
                         <img
                           alt="..."
                           src="https://avatars0.githubusercontent.com/u/55534054?s=460&u=402783902455ae84995129488dd3a12d0699fd84&v=4"
-                          className="absolute h-auto -m-16 -ml-20 align-middle border-none rounded-full shadow-xl lg:-ml-16"
+                          className="absolute h-auto -m-16 -ml-20 align-middle border-none rounded-full shadow-xl pointer-events-none select-none lg:-ml-16"
                           style={{ maxWidth: '150px' }}
                         />
                       </div>
