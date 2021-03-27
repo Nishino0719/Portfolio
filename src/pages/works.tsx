@@ -159,7 +159,9 @@ const Works = () => {
                 </div>
                 <div className="h-auto border-t">
                   <div className="w-full p-4 lg:w-9/12 lg:ml-40">
-                    <p className="text-2xl font-semibold lg:text-3xl">DApps</p>
+                    <p className="text-2xl font-semibold lg:text-3xl">
+                      Decentralized Apps
+                    </p>
                     <p className="text-sm text-gray-600">
                       ブロックチェーンアプリ
                     </p>

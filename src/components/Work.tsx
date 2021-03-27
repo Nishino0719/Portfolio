@@ -30,48 +30,57 @@ export const Work = (props: Props) => {
             <div className="fixed inset-0 z-50 flex items-center justify-center px-3 overflow-x-hidden overflow-y-auto outline-none focus:outline-none">
               <div className="relative w-auto max-w-3xl mx-auto my-6">
                 <div className="relative flex flex-col w-full bg-white border-0 rounded-lg shadow-lg outline-none focus:outline-none">
-                  <div className="flex items-start justify-between p-5 m-3 border-b border-gray-300 border-solid rounded-t">
-                    {/* <div className="">
-
-                    </div> */}
-                    <h3 className="ml-8 text-3xl font-semibold">
+                  <div className="flex flex-wrap items-start justify-between p-2 m-3 border-b border-gray-300 border-solid rounded-t lg:p-5">
+                    <h3 className="ml-8 text-xl font-semibold lg:text-3xl whitespace-nowrap">
                       {props.title}
                     </h3>
-                    <p className="text-sm leading-relaxed text-gray-600 ">
+                    <p className="mx-2 text-xs leading-relaxed text-gray-600  lg:text-sm">
                       {props.details}
                     </p>
                   </div>
-                  <div className="relative flex-auto px-10">
-                    <div className="ml-8">
+                  <div className="relative flex-auto px-3 lg:px-10">
+                    <div className="ml-0 lg:ml-8">
                       <div className="flex">
-                        <Image
-                          src={props.thumbnailURL}
-                          width={
-                            props.isMobile
-                              ? props.thumbnailWidth / 3
-                              : props.thumbnailWidth / 10
-                          }
-                          height={
-                            props.isMobile
-                              ? props.thumbnailHeight / 3
-                              : props.thumbnailHeight / 10
-                          }
-                          alt={props.title}
-                        ></Image>
+                        <div className="min-h-full ">
+                          <Image
+                            src={props.thumbnailURL}
+                            width={
+                              props.isMobile
+                                ? props.thumbnailWidth / 3
+                                : props.thumbnailWidth / 5
+                            }
+                            height={
+                              props.isMobile
+                                ? props.thumbnailHeight / 3
+                                : props.thumbnailHeight / 5
+                            }
+                            alt={props.title}
+                          ></Image>
+                        </div>
                         <div className="ml-2">
-                          <p className="my-1 text-lg font-semibold">制作人数</p>
-                          <p className="my-2 ml-4 text-sm">
+                          <p className="my-1 text-base font-semibold lg:text-lg">
+                            制作人数
+                          </p>
+                          <p className="my-2 ml-4 text-xs lg:text-sm">
                             {props.producers}人
                           </p>
-                          <p className="my-1 text-lg font-semibold">担当</p>
-                          <p className="my-2 ml-4 text-sm">{props.role}</p>
+                          <p className="my-1 text-base font-semibold lg:text-lg">
+                            担当
+                          </p>
+                          <p className="my-2 ml-4 text-xs lg:text-sm">
+                            {props.role}
+                          </p>
                         </div>
                       </div>
-                      <p className="my-1 text-lg font-semibold">
+                      <p className="my-1 text-base font-semibold lg:text-lg">
                         アピールポイント
                       </p>
-                      <p className="my-2 ml-4 text-sm">{props.apeal}</p>
-                      <p className="my-1 text-lg font-semibold">技術スタック</p>
+                      <p className="my-2 ml-4 text-sm lg:text-sm">
+                        {props.apeal}
+                      </p>
+                      <p className="my-1 text-base font-semibold lg:text-lg ">
+                        技術スタック
+                      </p>
                       <div className="flex ml-4">
                         {props.stack.map((stack, index) => {
                           return (
