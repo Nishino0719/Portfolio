@@ -92,90 +92,41 @@ const Works = () => {
                     <Work
                       title={'Portfolio'}
                       thumbnailURL={'/portfolio.png'}
+                      thumbnailHeight={1840}
+                      thumbnailWidth={2980}
                       stack={portfolio}
                       productionPeriod={'2020/12/31 ~ 2020/1/3'}
                       date={'4日'}
-                      details={'Next.jsの簡単なアウトプットをしてみたかった。'}
-                      role={'デザイン、フロントエンド'}
+                      details={'ポートフォリオ'}
+                      role={'デザイン、設計、フロントエンド'}
+                      githubUrl={'https://github.com/Nishino0719/Portfolio'}
+                      producers={1}
+                      setOrder={false}
+                      isMobile={false}
                       apeal={
-                        '初めてカスタムドメインでのデプロイをしてみました。Next.jsでは404ページが簡単に実装できるので404ページも実装しています。'
+                        'Next.jsの簡単なアウトプットをしてみたかったので作成。初めてカスタムドメインでのデプロイをしてみました。Next.jsでは404ページが簡単に実装できるので404ページも実装しています。'
                       }
                     />
-                    <div className="flex flex-wrap py-10 my-10 border-t">
-                      <div className="lg:w-3/4 lg:order-2">
-                        <p className="ml-3 font-semibold text-gray-500">
-                          2020/6/13 ~ 2020/7/13
-                        </p>
-                        <Image
-                          src="/taskinit.png"
-                          width={2980}
-                          height={1840}
-                          alt="Task init"
-                        />
-                      </div>
-                      <div className="lg:w-1/4 lg:order-1">
-                        <h3 className="my-4 text-xl font-bold text-green-600 lg:mr-10">
-                          Task init
-                        </h3>
-                        <div className="flex my-2">
-                          <p className="text-base font-bold">制作期間:</p>
-                          <p className="text-base font-bold lg:mr-10">一ヶ月</p>
-                        </div>
-
-                        <p className="my-2 text-sm lg:mr-10">
-                          Googleアカウントと連携し、今あるタスクを管理するアプリ。
-                          <br />
-                          学校のタスク管理アプリが使いづらすぎて作った。
-                        </p>
-                        <div className="flex lg:mr-10 ">
-                          <p className="text-base font-bold">リポジトリ</p>
-                          <a
-                            href="https://github.com/Nishino0719/Task-todo"
-                            className="cursor-pointer"
-                            target="_brank"
-                            title="Github"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="25"
-                              height="25"
-                              viewBox="0 0 24 24"
-                              className="ml-2 text-gray-400 fill-current hover:text-green-500"
-                            >
-                              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                            </svg>
-                          </a>
-                        </div>
-                        <p className="my-2 text-base font-bold lg:mr-10">
-                          技術スタック
-                        </p>
-                        <div className="flex flex-wrap lg:mr-10">
-                          {taskinit.map(({ src, alt }) => {
-                            return (
-                              <div className="m-1" key={src}>
-                                <div className="hidden lg:block">
-                                  <Image
-                                    src={src}
-                                    alt={alt}
-                                    width={50}
-                                    height={50}
-                                  />
-                                </div>
-                                <div className="block lg:hidden">
-                                  <Image
-                                    src={src}
-                                    alt={alt}
-                                    width={35}
-                                    height={35}
-                                  />
-                                </div>
-                              </div>
-                            )
-                          })}
-                        </div>
-                      </div>
-                    </div>
-                    {/*  */}
+                    <Work
+                      title={'Task init'}
+                      thumbnailURL={'/taskinit.png'}
+                      thumbnailWidth={2980}
+                      thumbnailHeight={1840}
+                      stack={taskinit}
+                      productionPeriod={'2020/6/13 ~ 2020/7/13'}
+                      date={'1ヶ月'}
+                      details={
+                        '締め切りまでの時間を秒単位で示すタスク管理アプリ'
+                      }
+                      role={'デザイン、設計、フロントエンド'}
+                      githubUrl={'https://github.com/Nishino0719/Task-todo'}
+                      producers={1}
+                      setOrder={true}
+                      isMobile={false}
+                      apeal={
+                        '初めてVue,Nuxtを使ってアプリを作ったものです。Firebase Authenticationを使用してGoogleアカウントの連携をし、CRUDシステムを作った。ニューモーフィズムデザインを取り入れた点も工夫しました。'
+                      }
+                    />
                   </div>
                 </div>
                 <div className="h-auto border-t">
@@ -184,82 +135,26 @@ const Works = () => {
                       Mobile App
                     </p>
                     <p className="text-sm text-gray-600">モバイルアプリ</p>
-                    <div className="flex flex-wrap my-10">
-                      <div className="lg:w-1/2">
-                        <p className="ml-3 font-semibold text-gray-500">
-                          2020/9/24 ~ 2020/9/26
-                        </p>
-                        <Image
-                          src="/hunterhider.jpg"
-                          width={413}
-                          height={544}
-                          alt="HUNTER HIDER"
-                        />
-                      </div>
-                      <div className="lg:w-1/2">
-                        <h3 className="my-4 text-xl font-bold text-green-600 lg:ml-10">
-                          HUNTER HIDER
-                        </h3>
-                        <div className="flex my-2">
-                          <p className="text-base font-bold lg:ml-10">
-                            制作期間:
-                          </p>
-                          <p className="text-base font-bold">2日</p>
-                        </div>
-
-                        <p className="my-2 text-sm lg:ml-10">
-                          画像を認識して、宝の場所にカメラをかざすと宝(ARオブジェクト)が出現するARの宝探しアプリ。
-                          <br />
-                          初めてのハッカソン、初めてのFlutter、初めてのAR。
-                        </p>
-                        <div className="flex lg:ml-10 ">
-                          <p className="text-base font-bold">リポジトリ</p>
-                          <a
-                            href="https://github.com/shoukitsuda/Mixture_app"
-                            className="cursor-pointer"
-                            target="_brank"
-                            title="Github"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="25"
-                              height="25"
-                              viewBox="0 0 24 24"
-                              className="ml-2 text-gray-400 fill-current hover:text-green-500"
-                            >
-                              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                            </svg>
-                          </a>
-                        </div>
-                        <p className="my-2 text-base font-bold lg:ml-10">
-                          技術スタック
-                        </p>
-                        <div className="flex flex-wrap lg:ml-10">
-                          {hunterhider.map(({ src, alt }) => {
-                            return (
-                              <div className="m-1" key={src}>
-                                <div className="hidden lg:block">
-                                  <Image
-                                    src={src}
-                                    alt={alt}
-                                    width="50"
-                                    height="50"
-                                  />
-                                </div>
-                                <div className="block lg:hidden">
-                                  <Image
-                                    src={src}
-                                    alt={alt}
-                                    width="35"
-                                    height="35"
-                                  />
-                                </div>
-                              </div>
-                            )
-                          })}
-                        </div>
-                      </div>
-                    </div>
+                    <Work
+                      title={'HUNTER HIDER'}
+                      thumbnailURL={'/hunterhider.jpg'}
+                      thumbnailWidth={364}
+                      thumbnailHeight={528}
+                      stack={hunterhider}
+                      productionPeriod={'2020/9/24 ~ 2020/9/26'}
+                      date={'2日'}
+                      details={
+                        '画像認識をして特定の場所にカメラをかざすとARオブジェクトが現れるAR宝探し'
+                      }
+                      role={'デザイン、設計、ページ遷移、AR,'}
+                      githubUrl={'https://github.com/shoukitsuda/Mixture_app'}
+                      producers={4}
+                      setOrder={false}
+                      isMobile={true}
+                      apeal={
+                        'Flutterを用いた初めてのモバイルアプリ開発でした。初めてハッカソンに出て初めてチーム開発というものを経験しました。'
+                      }
+                    />
                   </div>
                 </div>
                 <div className="h-auto border-t">
@@ -268,87 +163,28 @@ const Works = () => {
                     <p className="text-sm text-gray-600">
                       ブロックチェーンアプリ
                     </p>
-                    <div className="flex flex-wrap py-10 my-10">
-                      <div className="lg:w-3/4 lg:order-2">
-                        <p className="ml-3 font-semibold text-gray-500">
-                          2020/8/7 ~ 2020/12/19
-                        </p>
-                        <Image
-                          src="/reportoken.png"
-                          width={2980}
-                          height={1842}
-                          alt="ReporToken"
-                        />
-                      </div>
-                      <div className="lg:w-1/4 lg:order-1">
-                        <h3 className="my-4 text-xl font-bold text-green-600 lg:mr-10">
-                          ReporToken
-                        </h3>
-                        <div className="flex my-2">
-                          <p className="text-base font-bold">制作期間:</p>
-                          <p className="text-base font-bold lg:mr-10">半年</p>
-                        </div>
-
-                        <p className="my-2 text-sm lg:mr-10">
-                          ERC20トークンを用いた分散型レポート共有ブロックチェーンアプリ。
-                          <br />
-                          <a
-                            href="https://challecara.org/"
-                            className="text-blue-600"
-                            target="_brank"
-                          >
-                            チャレキャラ
-                          </a>
-                          で企業賞受賞。
-                        </p>
-                        <div className="flex lg:mr-10 ">
-                          <p className="text-base font-bold">リポジトリ</p>
-                          <a
-                            href="https://github.com/Nishino0719/ReportToken"
-                            className="cursor-pointer"
-                            target="_brank"
-                            title="Github"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="25"
-                              height="25"
-                              viewBox="0 0 24 24"
-                              className="ml-2 text-gray-400 fill-current hover:text-green-500"
-                            >
-                              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                            </svg>
-                          </a>
-                        </div>
-                        <p className="my-2 text-base font-bold lg:mr-10">
-                          技術スタック
-                        </p>
-                        <div className="flex flex-wrap lg:mr-10">
-                          {reportoken.map(({ src, alt }) => {
-                            return (
-                              <div className="m-1" key={src}>
-                                <div className="hidden lg:block">
-                                  <Image
-                                    src={src}
-                                    alt={alt}
-                                    width="50"
-                                    height="50"
-                                  />
-                                </div>
-                                <div className="block lg:hidden">
-                                  <Image
-                                    src={src}
-                                    alt={alt}
-                                    width="35"
-                                    height="35"
-                                  />
-                                </div>
-                              </div>
-                            )
-                          })}
-                        </div>
-                      </div>
-                    </div>
+                    <Work
+                      title={'ReporToken'}
+                      thumbnailURL={'/reportoken.png'}
+                      thumbnailWidth={2980}
+                      thumbnailHeight={1842}
+                      stack={reportoken}
+                      productionPeriod={'2020/8/7 ~ 2020/12/19'}
+                      date={'半年'}
+                      details={
+                        'ERC20トークンを用いた分散型レポート共有ブロックチェーンアプリ'
+                      }
+                      role={
+                        'デザイン、設計、フロントエンド、スマートコントラクト'
+                      }
+                      githubUrl={'https://github.com/Nishino0719/ReportToken'}
+                      producers={4}
+                      setOrder={true}
+                      isMobile={false}
+                      apeal={
+                        'Ethereumというブロックチェーンを学習し、ブロックチェーンアプリを設計から携わりました。非中央集権型アプリを意識し、性悪説を前提としたインセンティブデザインを集約することができ、チャレンジキャラバン(九州の学生アプリコンテスト)で企業賞を受賞しました。'
+                      }
+                    />
                   </div>
                 </div>
               </div>
