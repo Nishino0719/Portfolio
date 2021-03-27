@@ -44,6 +44,26 @@ class MyDocument extends Document {
           <meta name="application-name" content="Portfolio" />
           <meta name="theme-color" content="#000" />
           <meta name="description" content="Front / Mobile Engineer" />
+          <meta name="twitter:title" content={'Nishino0719'} />
+          <meta
+            name="twitter:description"
+            content={'Nishinoのポートフォリオ'}
+          />
+          <meta
+            name="twitter:image"
+            content={
+              'https://avatars0.githubusercontent.com/u/55534054?s=460&u=402783902455ae84995129488dd3a12d0699fd84&v=4'
+            }
+          />
+          <meta name="twitter:card" content="summary" />
+          <meta property="og:title" content={'Nishinoのポートフォリオ'} />
+          <meta property="og:description" content={'Nishinoのポートフォリオ'} />
+          <meta
+            property="og:image"
+            content={
+              'https://avatars0.githubusercontent.com/u/55534054?s=460&u=402783902455ae84995129488dd3a12d0699fd84&v=4'
+            }
+          />
           <link rel="icon" sizes="192x192" href="/icon-192x192.png" />
           <link rel="icon" href="/favicon.ico" />
           <link rel="manifest" href="/manifest.json" />

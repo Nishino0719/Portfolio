@@ -15,11 +15,6 @@ const favorite = [
 const About = () => {
   return (
     <>
-      <Meta
-        title="Nishino0719"
-        description="Nishino | Front + Mobile Engineer."
-        image="https://avatars0.githubusercontent.com/u/55534054?s=460&u=402783902455ae84995129488dd3a12d0699fd84&v=4"
-      />
       <Layout>
         <main className="profile-page">
           <section className="relative block" style={{ height: '230px' }}>
