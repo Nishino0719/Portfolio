@@ -90,6 +90,44 @@ const Works = () => {
                     </p>
                     <p className="text-sm text-gray-600">Webアプリ</p>
                     <Work
+                      title={'技術スタックジェネレーター'}
+                      thumbnailURL={'/techstackgenerator.png'}
+                      thumbnailHeight={1840}
+                      thumbnailWidth={2980}
+                      stack={stackGenerator}
+                      productionPeriod={'2021/3/18 ~ 2021/3/24'}
+                      date={'1週間'}
+                      details={'技術スタックを簡単に作成するアプリ'}
+                      role={'デザイン、設計、フロントエンド'}
+                      githubUrl={
+                        'https://github.com/Nishino0719/tech-stack-generator'
+                      }
+                      producers={1}
+                      setOrder={false}
+                      isMobile={false}
+                      apeal={
+                        'アプリを作る前やプレゼンの時に技術スタックを簡単に作ることができれば時間短縮になると思い作成しました。html2canvasで画像にしてダウンロードすることができます。また初めてPWA対応、ダークモード対応をしました。アプリを使いやすくするためにドラッグ$ドロップができ、デバック機能なども追加しています。'
+                      }
+                    />
+                    <Work
+                      title={'もくもく'}
+                      thumbnailURL={'/mokumoku.png'}
+                      thumbnailHeight={1840}
+                      thumbnailWidth={2980}
+                      stack={mokumoku}
+                      productionPeriod={'2021/3/15 ~ 2021/3/17'}
+                      date={'3日'}
+                      details={'もくもく会専用の通話アプリ'}
+                      role={'デザイン、設計、フロントエンド'}
+                      githubUrl={'https://github.com/Nishino0719/mokumoku'}
+                      producers={2}
+                      setOrder={true}
+                      isMobile={false}
+                      apeal={
+                        'Clubhouseでも使用されている通信基盤技術Agoraを用いて音声通話部分を実装しました。自動音声ミュート機能など、もくもくするために必要な機能を詰め込みました。'
+                      }
+                    />
+                    <Work
                       title={'Portfolio'}
                       thumbnailURL={'/portfolio.png'}
                       thumbnailHeight={1840}
