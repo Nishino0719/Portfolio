@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: nishino0719.work
+Token: b149557f669f710a7bd685e9e8dd7143974505c5b8efb3d43b8dc6bedf6aa608
