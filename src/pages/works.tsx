@@ -9,6 +9,12 @@ export type stackInfo = {
   alt: string
 }
 
+const watchWithYou: stackInfo[] = [
+  { src: '/nextjs.svg', alt: 'Next.js' },
+  { src: '/tailwindcss.svg', alt: 'Tailwind CSS' },
+  { src: '/vercel.svg', alt: 'Vercel' },
+  { src: '/firebase.svg', alt: 'Firebase' }
+]
 const stackGenerator: stackInfo[] = [
   { src: '/nextjs.svg', alt: 'Next.js' },
   { src: '/tailwindcss.svg', alt: 'Tailwind CSS' },
@@ -90,6 +96,24 @@ const Works = () => {
                     </p>
                     <p className="text-sm text-gray-600">Webアプリ</p>
                     <Work
+                      title={'Watch with You'}
+                      thumbnailURL={'/watchwithyou.png'}
+                      thumbnailHeight={1840}
+                      thumbnailWidth={2980}
+                      stack={watchWithYou}
+                      productionPeriod={'2021/6/18 ~ 2021/6/20'}
+                      date={'2日'}
+                      details={'同じ空間でYouTube動画を楽しめるアプリ'}
+                      role={'デザイン、設計、フロントエンド、同期機能'}
+                      githubUrl={'https://github.com/Nishino0719/stego-cup'}
+                      producers={2}
+                      setOrder={true}
+                      isMobile={false}
+                      apeal={
+                        'ハッカソンで開発しました。カーソルやエフェクト、再生時間を同期することができ、まるで同じ空間でYouTubeの動画をみることができるアプリです。グループの作成から、リンクを共有することで友達と同じ空間で動画を楽しむことができます。'
+                      }
+                    />
+                    <Work
                       title={'技術スタックジェネレーター'}
                       thumbnailURL={'/techstackgenerator.png'}
                       thumbnailHeight={1840}
@@ -125,44 +149,6 @@ const Works = () => {
                       isMobile={false}
                       apeal={
                         'Clubhouseでも使用されている通信基盤技術Agoraを用いて音声通話部分を実装しました。自動音声ミュート機能など、もくもくするために必要な機能を詰め込みました。'
-                      }
-                    />
-                    <Work
-                      title={'Portfolio'}
-                      thumbnailURL={'/portfolio.png'}
-                      thumbnailHeight={1840}
-                      thumbnailWidth={2980}
-                      stack={portfolio}
-                      productionPeriod={'2020/12/31 ~ 2020/1/3'}
-                      date={'4日'}
-                      details={'ポートフォリオ'}
-                      role={'デザイン、設計、フロントエンド'}
-                      githubUrl={'https://github.com/Nishino0719/Portfolio'}
-                      producers={1}
-                      setOrder={false}
-                      isMobile={false}
-                      apeal={
-                        'Next.jsの簡単なアウトプットをしてみたかったので作成。初めてカスタムドメインでのデプロイをしてみました。Next.jsでは404ページが簡単に実装できるので404ページも実装しています。'
-                      }
-                    />
-                    <Work
-                      title={'Task init'}
-                      thumbnailURL={'/taskinit.png'}
-                      thumbnailWidth={2980}
-                      thumbnailHeight={1840}
-                      stack={taskinit}
-                      productionPeriod={'2020/6/13 ~ 2020/7/13'}
-                      date={'1ヶ月'}
-                      details={
-                        '締め切りまでの時間を秒単位で示すタスク管理アプリ'
-                      }
-                      role={'デザイン、設計、フロントエンド'}
-                      githubUrl={'https://github.com/Nishino0719/Task-todo'}
-                      producers={1}
-                      setOrder={true}
-                      isMobile={false}
-                      apeal={
-                        '初めてVue,Nuxtを使ってアプリを作ったものです。Firebase Authenticationを使用してGoogleアカウントの連携をし、CRUDシステムを作った。ニューモーフィズムデザインを取り入れた点も工夫しました。'
                       }
                     />
                   </div>
